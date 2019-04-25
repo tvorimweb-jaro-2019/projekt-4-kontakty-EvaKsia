@@ -8,3 +8,115 @@ body {
 }
 
 /* ---------------------------------------------------- */
+
+h1{
+	text-align: center;
+	font-size: 32px;
+}
+
+.team{
+	display: flex;
+	flex-wrap: wrap;
+	flex-grow: 1;
+	width: 100%;
+
+}
+
+.clenka{
+	width: 95%;
+	flex-wrap: wrap;
+	text-align: center;
+	border-color: black;
+	border-radius: 5px;
+	border-style: solid;
+	border: 2px;
+	box-shadow: 2px 2px 2px 2px rgb(191, 208, 240);
+	padding: 25px;
+	margin:30px;
+}
+
+.jmeno{
+	font-size: 32px;
+	font-weight: 600;
+	text-align: center;
+}
+
+.foto{
+	border-radius: 100%;
+	max-width: 100%;
+}
+
+.popis{
+	font-size: 24px;
+	text-align: center;
+}
+
+
+@media (min-width: 540px) {
+	.team {
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	.clenka {
+		flex-wrap: wrap;
+		width: 45%;
+		margin: 5px;
+		padding: 5px;
+		
+	}
+
+	.jmeno{
+		font-size: 14px;
+		margin-top: 20px;
+		text-align: left;		
+	}
+
+	.popis{
+		font-size: 11px;
+		text-align: left;
+	}
+
+	.foto {	
+		float: left;
+		margin:10px 6px;	
+		max-width: 80px;
+	}
+
+}
+
+@media (min-width: 960px) {
+	.team {
+		display:flex;
+		align-items:stretch;
+	}
+
+	.clenka{ 
+		align-items: center;
+		justify-content: center;
+		width: 22%;
+		margin: 10px;
+		display: flex;
+		flex-wrap: wrap;
+		padding: 10px;
+	}
+	
+	.foto {
+		margin: 3px;
+		max-width: 100%;
+	}
+
+	.popis {
+		font-size: 14px;
+		text-align:center;
+	}
+
+	.jmeno {
+		font-size: 20px;
+		padding: 5px;
+		text-align:center;
+
+		}
+
+
+ }
